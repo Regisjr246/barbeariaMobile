@@ -51,9 +51,9 @@ console.log(dados);
                     <Text style={styles.forgotPassword}>Esqueceu a senha?</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity >
-                    <Text  style={styles.forgotSingin}>Não possui conta? Cadastre-se!</Text>
-                </TouchableOpacity>
+
+                
+                
 
             </View>
         </View>
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#F76900'
+        backgroundColor: '#6a03de'
     },
 
     logo: {
@@ -75,8 +75,8 @@ const styles = StyleSheet.create({
 
 
     logoBarbearia:{
-        width:800,
-        height: 80,
+        width:150,
+        height: 110,
         marginBottom: 20,
         marginTop: -200
     },
@@ -117,6 +117,7 @@ const styles = StyleSheet.create({
         height: 40,
         borderRadius: 8
     },
+    
 
     buttonText: {
         color: "#FFFFFF",
