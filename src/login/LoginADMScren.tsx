@@ -34,8 +34,8 @@ console.log(dados);
            
             
             <View style={styles.card}>
-            <Image style={styles.logo} resizeMode='contain' source={require('../assets/images/clientes.png')} />
-                <Text style={styles.title}>Login</Text>
+            <Image style={styles.logo} resizeMode='contain' source={require('../assets/images/ADM.png')} />
+                <Text style={styles.title}>Login Adiministrador</Text>
                 
                 <TextInput style={styles.input} placeholder="E-mail" placeholderTextColor={"#151413"}  onChangeText={(textEmail)=>setEmail(textEmail)}   ></TextInput>
 
