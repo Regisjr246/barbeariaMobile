@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 
-function LoginScreen(): JSX.Element {
+function CadastroClienteScreen(): JSX.Element {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -21,11 +21,29 @@ function LoginScreen(): JSX.Element {
 
             <View style={styles.card}>
                 <Image style={styles.logo} resizeMode='contain' source={require('../assets/images/Cliente.png')} />
-                <Text style={styles.title}>Login Cliente</Text>
+                <Text style={styles.title}>Cadastro Cliente</Text>
                 <TextInput style={styles.input} placeholder="E-mail" placeholderTextColor="#333333" onChangeText={(textEmail) => setEmail(textEmail)} />
+             
+                <TextInput style={styles.input} placeholder="Celular" placeholderTextColor="#333333" onChangeText={(textCelular) => setEmail(textCelular)} />
+                <TextInput style={styles.input} placeholder="CPF" placeholderTextColor="#333333" onChangeText={(textCPF) => setPassword(textCPF)}  />
+
+                <TextInput style={styles.input} placeholder="Data de Nascimneto" placeholderTextColor="#333333" onChangeText={(textDataNascimento) => setEmail(textDataNascimento)} />
+                <TextInput style={styles.input} placeholder="Cidade" placeholderTextColor="#333333" onChangeText={(textCidade) => setCd(textCidade)}  />
+                <TextInput style={styles.input} placeholder="Estado" placeholderTextColor="#333333" onChangeText={(textEstado) => setEstado(textEstado)} />
+                <TextInput style={styles.input} placeholder="Pais" placeholderTextColor="#333333" onChangeText={(textPais) => setPais(textPais)}  />
+                <TextInput style={styles.input} placeholder="Rua" placeholderTextColor="#333333" onChangeText={(textRua) => setRua(textRua)} />
+                <TextInput style={styles.input} placeholder="Numero" placeholderTextColor="#333333" onChangeText={(textNumero) => setNumero(textNumero)}  />
+             
+                <TextInput style={styles.input} placeholder="Bairro" placeholderTextColor="#333333" onChangeText={(textBairro) => setBairro(textBairro)}  />
+                <TextInput style={styles.input} placeholder="Cep" placeholderTextColor="#333333" onChangeText={(textCep) => setCep(textCep)}  />
+                <TextInput style={styles.input} placeholder="Complemento" placeholderTextColor="#333333" onChangeText={(textComplemento) => setComplemento(Complemento)}  />
+                <TextInput style={styles.input} placeholder="Password" placeholderTextColor="#333333" onChangeText={(textPassword) => setPassword(textPassword)}  />
+             
+             
+             
                 <TextInput style={styles.input} placeholder="Senha" placeholderTextColor="#333333" onChangeText={(textPassword) => setPassword(textPassword)} secureTextEntry />
                 <TouchableOpacity style={styles.button} onPress={() => { login() }}>
-                    <Text style={styles.buttonText}>Entrar</Text>
+                    <Text style={styles.buttonText}>Cadastrar</Text>
                 </TouchableOpacity>
                 <TouchableOpacity>
                     <Text style={styles.forgotPassword}>Esqueceu a senha?</Text>
@@ -102,4 +120,4 @@ const styles = StyleSheet.create({
    }
 });
 
-export default LoginScreen;
+export default CadastroClienteScreen;
