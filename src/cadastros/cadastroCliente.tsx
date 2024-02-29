@@ -6,6 +6,19 @@ function CadastroClienteScreen(): JSX.Element {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
+
+
+    const [, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+
+
     function login() {
         const data = {
             email: email,
@@ -22,6 +35,8 @@ function CadastroClienteScreen(): JSX.Element {
             <View style={styles.card}>
                 <Image style={styles.logo} resizeMode='contain' source={require('../assets/images/Cliente.png')} />
                 <Text style={styles.title}>Cadastro Cliente</Text>
+
+                <TextInput style={styles.input} placeholder="E-mail" placeholderTextColor="#333333" onChangeText={(textEmail) => setEmail(textEmail)} />
                 <TextInput style={styles.input} placeholder="E-mail" placeholderTextColor="#333333" onChangeText={(textEmail) => setEmail(textEmail)} />
              
                 <TextInput style={styles.input} placeholder="Celular" placeholderTextColor="#333333" onChangeText={(textCelular) => setEmail(textCelular)} />
